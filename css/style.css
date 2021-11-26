@@ -1,0 +1,36 @@
+:root {
+    --color__black-1: #000000;
+    --color__black-2: #181f29;
+    --color__grey-1: #273140;
+    --color__grey-2: #6a7c95;
+    --color__white-1: #ffffff;
+    --color__green: #5ca358;
+
+    --shadow__hover: 0rem 0rem 1.5rem rgba(24, 31, 41, 0.15);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* STYLE: global */
+body {
+    min-height: 200vh;
+    font-family: 'Roboto', Arial, Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* !STYLE: global */
