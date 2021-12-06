@@ -1,13 +1,92 @@
+/* STYLE: vars */
 :root {
     --color__black-1: #000000;
     --color__black-2: #181f29;
     --color__grey-1: #273140;
     --color__grey-2: #6a7c95;
+    --color__grey-3: #e5e5e5;
+    --color__grey-4: #717e92;
+    --color__grey-5: #6a9590;
+    --color__grey-6: #95936a;
     --color__white-1: #ffffff;
-    --color__green: #5ca358;
+    --color__green: #5ca35b;
 
     --shadow__hover: 0rem 0rem 1.5rem rgba(24, 31, 41, 0.15);
 }
+
+/* !STYLE: vars */
+
+
+/* NOTE: font-face */
+@font-face {
+    font-family: 'Mont';
+    src: local('Mont-Bold'),
+        local('Mont Bold'),
+        url(../fonts/mont/Mont-Bold.woff2) format('woff2'),
+        url(../fonts/mont/Mont-Bold.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: local('Mont-SemiBold'),
+        local('Mont SemiBold'),
+        url(../fonts/mont/Mont-SemiBold.woff2) format('woff2'),
+        url(../fonts/mont/Mont-SemiBold.woff) format('woff');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: local('Mont'),
+        local('Mont-Regular'),
+        local('Mont Regular'),
+        url(../fonts/mont/Mont-Regular.woff2) format('woff2'),
+        url(../fonts/mont/Mont-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Bold'),
+        local('SFProDisplay-Bold'),
+        url(../fonts/sfprodisplay/SFProDisplay-Bold.woff2) format('woff2'),
+        url(../fonts/sfprodisplay/SFProDisplay-Bold.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay Medium'),
+        local('SFProDisplay-Medium'),
+        url(../fonts/sfprodisplay/SFProDisplay-Medium.woff2) format('woff2'),
+        url(../fonts/sfprodisplay/SFProDisplay-Medium.woff) format('woff');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: local('SFProDisplay'),
+        local('SFProDisplay-Regular'),
+        local('SFProDisplay-Regular'),
+        url(../fonts/sfprodisplay/SFProDisplay-Regular.woff2) format('woff2'),
+        url(../fonts/sfprodisplay/SFProDisplay-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* !NOTE: font-face */
 
 *,
 *::after,
@@ -18,7 +97,7 @@
 /* STYLE: global */
 body {
     min-height: 200vh;
-    font-family: 'Roboto', Arial, Arial, Helvetica, sans-serif;
+    font-family: 'SFProDisplay', Arial, Helvetica, sans-serif;
 }
 
 ul,
@@ -34,3 +113,82 @@ h6 {
 }
 
 /* !STYLE: global */
+
+/* STYLE: btn */
+
+.btn {
+    padding: 0.5em 0.75em;
+    line-height: 1.5;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+    transition: all 0.24s;
+    transform-origin: center;
+    color: var(--text-color);
+    --border-color: var(--color__green);
+    --text-color: var(--color__white-1);
+    --bg-color: var(--color__green);
+}
+
+.btn.--secondary {
+    --border-color: var(--color__grey-4);
+    --bg-color: var(--color__grey-4);
+    --text-color: var(--color__grey-3);
+}
+
+.btn.--third {
+    --border-color: var(--color__grey-3);
+    --bg-color: var(--color__grey-3);
+    --text-color: var(--color__grey-2);
+}
+
+.btn.--fourth {
+    --border-color: var(--color__grey-5);
+    --bg-color: var(--color__grey-5);
+    --text-color: var(--color__grey-3);
+}
+
+.btn.--fifth {
+    --border-color: var(--color__grey-6);
+    --bg-color: var(--color__grey-6);
+    --text-color: var(--color__grey-3);
+}
+
+.btn:hover {
+    --text-color: var(--color__green);
+    --border-color: var(--color__white-1);
+    --bg-color: var(--color__white-1);
+    transform: scale(1.05);
+}
+
+.btn.--secondary:hover {
+    --border-color: var(--color__grey-3);
+    --bg-color: var(--color__grey-3);
+    --text-color: var(--color__grey-4);
+}
+
+.btn:focus {
+    outline: transparent;
+    transform: translateY(-10%);
+}
+
+.btn:focus-visible {
+    transform: translateY(-10%);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    --text-color: var(--color__white-1);
+    --border-color: var(--color__green);
+    --bg-color: var(--color__green);
+}
+
+/* !STYLE: btn */
