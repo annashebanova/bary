@@ -273,17 +273,29 @@ button:active {
     z-index: 5;
 }
 
-.top-bar__content {}
+.top-bar__content {
+    max-width: 100%;
+    margin: 0;
+}
 
-.top-bar__list {
+.top-bar__list-1 {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-right: 3rem;
+}
+
+.top-bar__list-2 {
+    list-style: none;
+    padding: 0;
+    margin-left: 3rem;
 }
 
 .top-bar__list-item+.top-bar__list-item {
     margin-left: 1.25rem;
 }
+
+.top-bar__elipse {}
+
 
 .link {
     color: var(--color__grey-2);
@@ -331,11 +343,10 @@ button:active {
 
 .header {
     min-height: 100vh;
+    max-width: 100%;
 }
 
-.header__inner {
-    max-width: 90rem;
-}
+.header__inner {}
 
 .header__title {
     font-size: 3.5rem;
@@ -358,8 +369,9 @@ button:active {
 }
 
 .header__pic {
-    margin-left: 30rem;
     margin-top: 3rem;
+    height: 25%;
+    width: 25%;
 }
 
 .header__links-wrapper {
@@ -426,9 +438,7 @@ button:active {
 
 /* !STYLE: one*/
 /* STYLE: two*/
-.two {
-    padding: 5rem;
-}
+.two {}
 
 .two__title {
     margin-top: 5rem;
@@ -448,8 +458,8 @@ button:active {
 .two__pic-wrapper {}
 
 .pic {
-    padding-left: 2rem;
     margin-top: 4rem;
+    padding: 1rem;
 }
 
 /* !STYLE: two*/
@@ -476,13 +486,14 @@ button:active {
 
 .boon__btn {
     margin-top: 3rem;
-    width: 20rem;
+    width: 15rem;
 }
 
 .--secondary {}
 
 .boon__pic {
-    margin-left: 10rem;
+    margin-left: 5rem;
+    max-width: 50%;
 }
 
 /* !STYLE: boon */
@@ -553,6 +564,62 @@ button:active {
 /* !STYLE: money */
 
 /* STYLE: renewal */
+.renewal {
+    margin: 5rem;
+}
 
+.renewal__title {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 5rem;
+}
+
+.renewal__text {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    color: var(--color__grey-2);
+    width: 40rem;
+}
+
+.renewal__item {
+    margin-top: 3rem;
+}
+
+.renewal__telegram {}
+
+.img__telegram {}
+
+.renewal__instagramm {
+    margin-left: 2rem;
+}
+
+.renewal__facebook {
+    margin-left: 2rem;
+}
 
 /* !STYLE: renewal */
+/* STYLE: footer */
+
+.footer {
+    margin: 5rem;
+}
+
+.footer__links {}
+
+.footer__link {
+    color: var(--color__grey-4);
+    font-size: 1rem;
+    max-width: 2rem;
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.footer__link+.footer__link {
+    margin-left: 25rem;
+}
+
+.footer__elipse {}
+
+/* !STYLE: footer */
