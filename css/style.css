@@ -278,23 +278,15 @@ button:active {
     margin: 0;
 }
 
-.top-bar__list-1 {
+.top-bar__list {
     list-style: none;
     padding: 0;
     margin-right: 3rem;
 }
 
-.top-bar__list-2 {
-    list-style: none;
-    padding: 0;
-    margin-left: 3rem;
-}
-
 .top-bar__list-item+.top-bar__list-item {
-    margin-left: 1.25rem;
+    margin-left: 6rem;
 }
-
-.top-bar__elipse {}
 
 
 .link {
